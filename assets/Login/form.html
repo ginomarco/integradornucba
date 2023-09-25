@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/5a8f3232d1.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./form.css" />
+  <title>Registro</title>
+</head>
+
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="#" id="loginform">
+      <div class="form-field">
+        <label for="loginUsername">Nombre de usuario </label>
+        <input type="text" id="loginUserName" placeholder="Nombre de usuario" />
+        <small class="alert-message">Error</small>
+      </div>
+      <div class="form-field">
+        <label for="loginPassword">Contraseña</label>
+        <input type="password" id="loginPassword" placeholder="Ingrese su Contraseña" />
+        <small class="alert-message">Error</small>
+      </div>
+      <div class="form-field">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        <label>Mostrar/ocultar contraseña</label>
+      </div>
+      <button class="btn" type="submit">Enviar</button>
+    </form>
+
+    <div class="reset-password">
+      <small><a href="#">Olvidó su nombre de usuario o contraseña </a></small>
+    </div>
+    <form action="#" class="form-request">
+      <div class="form-field">
+        <label for="requestEmail">Email</label>
+        <input type="email" name="" id="requestEmail" placeholder="Enter Your Email" />
+        <small class="alert-message">Error</small>
+      </div>
+      <button class="btn red" type="submit">Solicitud</button>
+    </form>
+    <div class="registro">
+      <a id="register" href="/assets/Register/register.html">Aun no tienes cuenta?</a>
+    </div>
+
+    <div class="home">
+      <a href="/index.html"><i class="fa-solid fa-house"></i></a>
+    </div>
+  </div>
+
+  <script src="./form.js"></script>
+</body>
+
+</html>

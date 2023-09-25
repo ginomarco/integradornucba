@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/5a8f3232d1.js" crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="mediaqueries.css">
+
+  <title>SHOES</title>
+</head>
+
+<body>
+  <header>
+    <nav class="menu">
+      <section class="menu__container">
+        <img class="menu__logo" src="/assets/logos/STYLE SHOES 500x500 px.png" alt="">
+        <div class="container_izq">
+          <ul class="menu__links">
+            <li class="menu__item">
+              <a href="#" class="menu__link">About</a>
+            </li>
+
+            <li class="menu__item menu__item--show">
+              <a href="#products" class="menu__link">Catalog </a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#" class="menu__link">Brands</a>
+            </li>
+          </ul>
+        </div>
+        <div class="container_central">
+          <ul class="menu__links">
+            <li class="menu__item">
+              <a href="#products" class="jump">JUMP</a>
+            </li>
+        </div>
+        <div class="container_derecho">
+          <ul class="menu__links">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Blog</a>
+            </li>
+
+            <li class="menu__item menu__item--show">
+              <a href="#redes_soc" class="menu__link">Contact</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#" class="menu__link"><img class="icono-carrito" src="/assets/iconos/carro-de-la-carretilla.png"
+                  alt="carrito de compras"></a>
+
+            </li>
+            <li class="menu__item">
+              <a href="/assets/Login/form.html" class="menu__link"><i class="fa-solid fa-user"></i></a>
+
+            </li>
+          </ul>
+
+        </div>
+        <div class="iconomenu-responsive">
+          <li class="menu__item">
+            <a href="#" class="menu__link"><img class="icono-carrito-res"
+                src="/assets/iconos/carro-de-la-carretilla.png" alt="carrito de compras"></a>
+          </li>
+        </div>
+
+
+        <div class="icono-menu">
+          <img src="assets/iconos/menu.png" class="menu__img" id="icono-menu" />
+        </div>
+        <div class="cont-menu " id="menu">
+          <ul>
+            <li class="menu__item menu__item--show">
+              <a href="/assets/Login/form.html" class="menu__link"><i class="fa-solid fa-user"></i></a>
+            </li>
+            <li class="menu__item menu__item--show">
+              <a href="#present" class="menu__link">About</a>
+            </li>
+
+            <li class="menu__item menu__item--show">
+              <a href="#products" class="menu__link">Catalog</a>
+            </li>
+
+            <li class="menu__item menu__item--show">
+              <a href="#products" class="menu__link">JUMP</a>
+            </li>
+
+            <li class="menu__item menu__item--show">
+              <a href="#" class="menu__link">BLOG</a>
+            </li>
+
+            <li class="menu__item menu__item--show">
+              <a href="#redes_soc" class="menu__link">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <!-- CARRITO -->
+      <div class="cart_container_total">
+        <div class="cart">
+          <h2>Tus Zapatillas</h2>
+          <div class="cart-container">
+
+          </div>
+          <span class="divider"></span>
+          <div class="cart-total">
+            <p>Total:</p>
+            <span class="total">0.00 $</span>
+          </div>
+          <button class="btn-buy">Comprar</button>
+          <button class="btn-delete">Vaciar carrito</button>
+        </div>
+        <div class="overlay"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container_total">
+      <div class="presentacion" id="present">
+        <hr>
+        <h1 class="neon">Style Shoes</h1>
+        <p>Es una tienda de Zapatillas Orientadas a todo tipo de personas,nuestra tienda busca cumplir las expectativas
+          de cada cliente . fundada en 2016 por Ariel Garaventa</p>
+        <hr>
+      </div>
+      <div class="datoscontainer">
+        <h2>179.99 $</h2>
+        <h1>Nike Air Max Plus III</h1>
+        <div class="puntuacion">
+          <p>Men's Shoes</p>
+          <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-50" class="fas fa-star"></label>
+          </div>
+        </div>
+        <hr class="hr_nike_air">
+        <p class="text_nike_air">Con la misma tecnología Tuned Air que sus predecesoras, las Nike Air Max Plus III
+          actualizan el diseño con detalles de plástico fusionado en la parte superior y rinden homenaje a la icónica
+          coloración degradada de las originales.</p>
+        <div class="size">
+          <p>Tamaños Disponibles </p>
+
+        </div>
+        <div class="size_widget">
+          <p> 35 - 36 - 37 - 38 - 39 - 40 - 41 - 42</p>
+        </div>
+
+
+        <a href="#products"> <button class="buttons">Comprar</button></a>
+      </div>
+      <section class="exibicion">
+        <div class="image-container">
+          <div class="image-product">
+            <a href="#image1">
+              <img class=".materialboxed" src="/assets/Nike Air Max Plus III/1.jpg" alt="github-hoodie">
+            </a>
+          </div>
+          <div class="image-product-galery">
+            <a href="#image2">
+              <img src="/assets/Nike Air Max Plus III/2.jpg" alt="">
+            </a>
+            <a href="#image3">
+              <img src="/assets/Nike Air Max Plus III/3.jpg" alt="">
+            </a>
+            <a href="#image4">
+              <img src="/assets/Nike Air Max Plus III/4.jpg" alt="">
+            </a>
+            <a href="#image5">
+              <img src="/assets/Nike Air Max Plus III/5.jpg" alt="">
+            </a>
+          </div>
+          <article class="light-box" id="image1">
+            <a href="#image5" class="next"><i class="fa-solid fa-arrow-left " id="flecha_izquierda"></i></a>
+            <img src="/assets/Nike Air Max Plus III/1.jpg" alt="">
+            <a href="#image2" class="next"><i class="fa-solid fa-arrow-right" id="flecha_derecha"></i></a>
+            <a href="" class="close"><i class="fa-solid fa-xmark" id="cruz"></i></a>
+          </article>
+          <article class="light-box" id="image2">
+            <a href="#image1" class="next"><i class="fa-solid fa-arrow-left" id="flecha_izquierda"></i></a>
+            <img src="/assets/Nike Air Max Plus III/2.jpg" alt="">
+            <a href="#image3" class="next"><i class="fa-solid fa-arrow-right" id="flecha_derecha"></i></a>
+            <a href="" class="close"><i class="fa-solid fa-xmark" id="cruz"></i></a>
+          </article>
+          <article class="light-box" id="image3">
+            <a href="#image2" class="next"><i class="fa-solid fa-arrow-left" id="flecha_izquierda"></i></a>
+            <img src="/assets/Nike Air Max Plus III/3.jpg" alt="">
+            <a href="#image4" class="next"><i class="fa-solid fa-arrow-right" id="flecha_derecha"></i></a>
+            <a href="" class="close"><i class="fa-solid fa-xmark" id="cruz"></i></a>
+          </article>
+          <article class="light-box" id="image4">
+            <a href="#image3" class="next"><i class="fa-solid fa-arrow-left" id="flecha_izquierda"></i></a>
+            <img src="/assets/Nike Air Max Plus III/4.jpg" alt="">
+            <a href="#image5" class="next"><i class="fa-solid fa-arrow-right" id="flecha_derecha"></i></a>
+            <a href="" class="close"><i class="fa-solid fa-xmark" id="cruz"></i></a>
+          </article>
+          <article class="light-box" id="image5">
+            <a href="#image4" class="next"><i class="fa-solid fa-arrow-left" id="flecha_izquierda"></i></a>
+            <img src="/assets/Nike Air Max Plus III/5.jpg" alt="">
+            <a href="#image1" class="next"><i class="fa-solid fa-arrow-right" id="flecha_derecha"></i></a>
+            <a href="" class="close"><i class="fa-solid fa-xmark" id="cruz"></i></a>
+          </article>
+
+      </section>
+      <section class="recomendation">
+
+        <div class="slider">
+          <img class="similares" src="/assets/sugerencias/Men's Jordan 1 Mid/1.jpg" alt="">
+          <img class="similares" src="/assets/sugerencias/Men's Jordan 1 Mid/2.jpg" alt="">
+          <img class="similares" src="/assets/sugerencias/Men's Jordan 1 Mid/3.jpg" alt="">
+
+        </div>
+        <div class="sugerencias">
+          <h2>Sugerencias</h2>
+          <h2>129,99$</h2>
+          <p>Men's Jordan 1 Mid</p>
+          <hr>
+          <h3>Colores Disponibles</p>
+            <div class="colores">
+              <img class="colors" src="/assets/colores/rojo.jpg" alt=" color rojo"> <img class="colors"
+                src="/assets/colores/gris.jpg" alt=" color gris"> <img class="colors" src="/assets/colores//blanco.jpg"
+                alt="color blanco">
+            </div>
+            <hr>
+            <h4 class="texto">Inspiradas en las AJ1 originales, las Air Jordan 1 Mid ofrecen a los aficionados la
+              oportunidad de seguir los pasos de MJ. El nuevo color ribetea los materiales clásicos e impecables e
+              infunde modernidad a un diseño clásico.</h4>
+            <a href="#products"></a> <button class="buttons">Mas</button></a>
+        </div>
+
+      </section>
+
+      <hr class="line_edit">
+    </div>
+
+
+    </div>
+
+    <!-- fin section principal -->
+    <hr class="stylo_line">
+    <!--  Comienzo section popular products  -->
+
+    <h2 class="text_title1">Popular Products</h2>
+    <div class="popularcontainer">
+
+      <div class="container-popu">
+        <div class="card">
+          <div class="imgBx">
+            <img src="/assets/objets/zapas objet/hombres/Nike Air VaporMax Plus.png">
+          </div>
+          <div class="contentBx">
+            <h2>Nike Air VaporMax Plus</h2>
+            <div class="prices">
+              <h3>Precio :</h3>
+              <h4>214.99 $</h4>
+            </div>
+            <a href="#products"><button id="buttonpopular">Ver Mas</button></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="container-popu">
+        <div class="card">
+          <div class="imgBx">
+            <img src="/assets/objets/zapas objet/mujeres/Nike-Air-Max-Alpha-Trainer-4.png">
+          </div>
+          <div class="contentBx">
+            <h2>Nike Air Max Alpha Trainer 4</h2>
+            <div class="prices">
+              <h3>Precio :</h3>
+              <h4>79.99 $</h4>
+            </div>
+            <a href="#products"><button id="buttonpopular">Ver Mas</button></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="container-popu">
+        <div class="card">
+          <div class="imgBx">
+            <img src="/assets/objets/zapas objet/niños/Jordan_Flight_Origin_4.png">
+          </div>
+          <div class="contentBx">
+            <h2>Nike Revolution 6</h2>
+            <div class="prices">
+              <h3>Precio :</h3>
+              <h4>35.97 $</h4>
+            </div>
+            <a href="#products"><button id="buttonpopular">Ver Mas</button></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="container-popu">
+        <div class="card">
+          <div class="imgBx">
+            <img src="/assets/objets/zapas objet/Outlet/Nike Air Tuned Max.png">
+          </div>
+          <div class="contentBx">
+            <h2>Nike Air Tuned Max</h2>
+            <div class="prices">
+              <h3>Precio :</h3>
+              <h4>110.47 $</h4>
+            </div>
+            <a href="#products"><button id="buttonpopular">Ver Mas</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- fin popular Products -->
+    <section id="products" class="section-productos">
+      <h2 class="text_title2">Shoes Available</h2>
+      <div class="categories">
+        <button class="category active">All</button>
+        <button class="category" data-category="men">Men</button>
+        <button class="category" data-category="woman">Women</button>
+        <button class="category" data-category="kids">Kids</button>
+        <button class="category" data-category="outlet">Outlet</button>
+
+      </div>
+
+      <div class="avaliable_container"> </div>
+
+      </div>
+
+      </div>
+      <button class="btn-load">Ver Más</button>
+    </section>
+  </main>
+  <footer>
+
+    <div class="container_hr">
+      <div class="container_hr_line">
+        <hr class="hr_line">
+      </div>
+      <div class="redes_sociales" id="redes_soc">
+        <button><a href="https://www.instagram.com/ariel_garav_/"><i class="fa-brands fa-instagram"></i></a></button>
+        <button><a href="https://www.facebook.com/ariel.garaventa/"><i class="fa-brands fa-facebook"></i></a></button>
+        <button><a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a></button>
+        <button><a href="https://twitter.com/Arielgarav"><i class="fa-brands fa-twitter"></i></a></button>
+        <button><a href="https://www.linkedin.com/in/ariel-g-b47b59238/"><i
+              class="fa-brands fa-linkedin-in"></i></a></button>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/objets/objets.js"></script>
+  <script src="index.js"></script>
+  <script src="/assets/animaciones/animaciones.js"></script>
+</body>
+
+</html>
